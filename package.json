@@ -5,12 +5,15 @@
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.4.3",
-    "express": "^4.4.5"
+    "browserify": "^10.2.3",
+    "express": "^4.4.5",
+    "reactify": "^1.1.1"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "browserify public/scripts/example.js -o public/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -27,7 +30,12 @@
     "url": "https://github.com/reactjs/react-tutorial/issues"
   },
   "homepage": "https://github.com/reactjs/react-tutorial",
-  "engines" : {
-    "node" : "0.12.x"
+  "engines": {
+    "node": "0.12.x"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
   }
 }
