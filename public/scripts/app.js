@@ -1,5 +1,7 @@
+var React = require('react')
 var CommentList = require('./commentList')
 var CommentForm = require('./commentForm')
+var $ = require('jquery')
 
 var CommentBox = React.createClass({
   loadCommentsFromServer: function() {

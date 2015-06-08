@@ -7,17 +7,15 @@
     "body-parser": "^1.4.3",
     "browserify": "^10.2.3",
     "express": "^4.4.5",
+    "jquery": "^2.1.4",
+    "marked": "^0.3.3",
+    "react": "^0.13.3",
     "reactify": "^1.1.1"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "build": "browserify public/scripts/example.js -o public/bundle.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/reactjs/react-tutorial.git"
+    "build": "browserify public/scripts/app.js -o public/bundle.js"
   },
   "keywords": [
     "react",
@@ -25,14 +23,6 @@
     "comment",
     "example"
   ],
-  "author": "petehunt",
-  "bugs": {
-    "url": "https://github.com/reactjs/react-tutorial/issues"
-  },
-  "homepage": "https://github.com/reactjs/react-tutorial",
-  "engines": {
-    "node": "0.12.x"
-  },
   "browserify": {
     "transform": [
       "reactify"
